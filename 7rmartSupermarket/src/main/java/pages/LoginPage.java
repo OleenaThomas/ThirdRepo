@@ -8,6 +8,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.ExcelUtility;
+import utilities.WaitUtility;
 
 public class LoginPage {
 
@@ -29,10 +30,14 @@ public class LoginPage {
 	}
 	
 	public boolean isDashboardDisplayed() {
+		WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeVisible(driver, dashboard);
 		return dashboard.isDisplayed();
 	}
 	
 	public boolean isAlertMessageDisplayed() {
+		WaitUtility waitutility=new WaitUtility();
+		waitutility.waitForElementToBeVisible(driver, alertmessage);
 		return alertmessage.isDisplayed();
 	}
 }

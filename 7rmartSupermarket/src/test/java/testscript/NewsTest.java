@@ -18,8 +18,9 @@ public class NewsTest extends Base{
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.login(username, password);
 		
+		String newstext=ExcelUtility.getStringData(1, 0, "newspage");
 		NewsPage newspage=new NewsPage(driver);
-		newspage.createNews();
+		newspage.createNews(newstext);
 		boolean news=newspage.isNewsCreated();
 		Assert.assertTrue(news);
 		

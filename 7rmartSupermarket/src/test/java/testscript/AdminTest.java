@@ -19,8 +19,8 @@ public class AdminTest extends Base{
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.login(username, password);
 		
-		String adminusername="admin112";
-		String adminpassword="admin112";
+		String adminusername=ExcelUtility.getStringData(1, 0, "adminpage");
+		String adminpassword=ExcelUtility.getStringData(1, 1, "adminpage");
 		AdminPage adminpage=new AdminPage(driver);
 		adminpage.createAdmin(adminusername, adminpassword);
 		boolean newadmin=adminpage.isNewAdminDisplayed();

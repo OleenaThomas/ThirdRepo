@@ -24,11 +24,11 @@ public class NewsPage {
 		PageFactory.initElements(driver, this);
 	}
 	
-	public void createNews() {
+	public void createNews(String newstext) {
 		PageUtility pageutility=new PageUtility();
 		pageutility.clickElement(driver, newstile);
 		newbutton.click();
-		newstextbox.sendKeys("test news");
+		newstextbox.sendKeys(newstext);
 		savebutton.click();
 	}
 	

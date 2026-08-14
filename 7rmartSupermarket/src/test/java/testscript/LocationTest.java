@@ -18,9 +18,11 @@ public class LocationTest extends Base {
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.login(username, password);
 		
+		String location=ExcelUtility.getStringData(1, 0, "locationpage");
+		int deliverycharge=ExcelUtility.getNumericData(1, 1, "locationpage");
 		LocationPage locationpage=new LocationPage(driver);
-		locationpage.createLocation();
-		boolean location=locationpage.isLocationCreated();
-		Assert.assertTrue(location);
+		locationpage.createLocation(location,deliverycharge);
+		boolean newlocation=locationpage.isLocationCreated();
+		Assert.assertTrue(newlocation);
 	}
 }

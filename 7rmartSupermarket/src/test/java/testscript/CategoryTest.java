@@ -18,8 +18,9 @@ public class CategoryTest extends Base{
 		LoginPage loginpage=new LoginPage(driver);
 		loginpage.login(username, password);
 		
+		String categoryname=ExcelUtility.getStringData(1, 0, "categorypage");
 		CategoryPage categorypage=new CategoryPage(driver);
-		categorypage.createCategory();
+		categorypage.createCategory(categoryname);
 		boolean category=categorypage.isCategoryCreated();
 		Assert.assertTrue(category);
 	}

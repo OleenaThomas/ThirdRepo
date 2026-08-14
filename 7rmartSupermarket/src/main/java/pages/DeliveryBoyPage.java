@@ -12,12 +12,12 @@ public class DeliveryBoyPage {
 
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-deliveryboy' and @class='small-box-footer']")WebElement deliveryboytile;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newbutton;
-	@FindBy(xpath="//input[@id='name']")WebElement name;
-	@FindBy(xpath="//input[@id='email']")WebElement email;
-	@FindBy(xpath="//input[@id='phone']")WebElement phonenumber;
-	@FindBy(xpath="//textarea[@id='address']")WebElement address;
-	@FindBy(xpath="//input[@id='username']")WebElement username;
-	@FindBy(xpath="//input[@id='password']")WebElement password;
+	@FindBy(xpath="//input[@id='name']")WebElement namefield;
+	@FindBy(xpath="//input[@id='email']")WebElement emailfield;
+	@FindBy(xpath="//input[@id='phone']")WebElement phonenumberfield;
+	@FindBy(xpath="//textarea[@id='address']")WebElement addressfield;
+	@FindBy(xpath="//input[@id='username']")WebElement usernamefield;
+	@FindBy(xpath="//input[@id='password']")WebElement passwordfield;
 	@FindBy(xpath="//button[@type='submit']")WebElement savebutton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement deliveryboyalertmessage;
 
@@ -27,15 +27,15 @@ public class DeliveryBoyPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void createDeliveryBoy() {
+	public void createDeliveryBoy(String name, String email, double phone,String address, String dboyusername, String dboypassword) {
 		deliveryboytile.click();
 		newbutton.click();
-		name.sendKeys("John Smith");
-		email.sendKeys("johnsmith@gmail.com");
-		phonenumber.sendKeys("123445");
-		address.sendKeys("ABC Ave");
-		username.sendKeys("johns");
-		password.sendKeys("johns");
+		namefield.sendKeys(name);
+		emailfield.sendKeys(email);
+		phonenumberfield.sendKeys(String.valueOf(phone));
+		addressfield.sendKeys(address);
+		usernamefield.sendKeys(dboyusername);
+		passwordfield.sendKeys(dboypassword);
 		PageUtility pageutility=new PageUtility();
 		pageutility.clickElement(driver, savebutton);
 	}

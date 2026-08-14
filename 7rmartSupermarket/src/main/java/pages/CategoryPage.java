@@ -14,7 +14,7 @@ public class CategoryPage {
 
 	@FindBy(xpath="//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']")WebElement categorytile;
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newbutton;
-	@FindBy(xpath="//input[@id='category']")WebElement category;
+	@FindBy(xpath="//input[@id='category']")WebElement categoryfield;
 	@FindBy(xpath="//li[@id='1-selectable']")WebElement selectgroup1;
 	@FindBy(xpath="//li[@id='2-selectable']")WebElement selectgroup2;
 	@FindBy(xpath="//input[@id='main_img']")WebElement choosefile;
@@ -29,12 +29,12 @@ public class CategoryPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void createCategory() {
+	public void createCategory(String categoryname) {
 		PageUtility pageutility=new PageUtility();
 		pageutility.clickElement(driver, categorytile);
 		
 		newbutton.click();
-		category.sendKeys("Apple Fruit");
+		categoryfield.sendKeys(categoryname);
 		selectgroup1.click();
 		selectgroup2.click();
 		

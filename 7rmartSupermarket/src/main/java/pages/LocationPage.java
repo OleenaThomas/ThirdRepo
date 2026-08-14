@@ -14,8 +14,8 @@ public class LocationPage {
 	@FindBy(xpath="//a[@class='btn btn-rounded btn-danger']")WebElement newbutton;
 	@FindBy(xpath="//select[@id='country_id']")WebElement country;
 	@FindBy(xpath="//select[@id='st_id']")WebElement state;
-	@FindBy(xpath="//input[@id='location']")WebElement location;
-	@FindBy(xpath="//input[@id='delivery']")WebElement deliverycharge;
+	@FindBy(xpath="//input[@id='location']")WebElement locationfield;
+	@FindBy(xpath="//input[@id='delivery']")WebElement deliverychargefield;
 	@FindBy(xpath="//button[@type='submit']")WebElement savebutton;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']")WebElement locationalertmessage;
 	
@@ -25,14 +25,14 @@ public class LocationPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void createLocation() {
+	public void createLocation(String location, int deliverycharge) {
 		locationtile.click();
 		newbutton.click();
 		PageUtility pageutility=new PageUtility();
 		pageutility.dropdownElement(country,"United Kingdom");
 		pageutility.dropdownElement(state, "Belfast");
-		location.sendKeys("London");
-		deliverycharge.sendKeys("50");
+		locationfield.sendKeys(location);
+		deliverychargefield.sendKeys(String.valueOf(deliverycharge));
 		savebutton.click();
 	}
 	

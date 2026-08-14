@@ -19,7 +19,14 @@ public class DeliveryBoyTest extends Base{
 		loginpage.login(username, password);
 		
 		DeliveryBoyPage deliveryboypage=new DeliveryBoyPage(driver);
-		deliveryboypage.createDeliveryBoy();
+		String name=ExcelUtility.getStringData(1, 0, "deliveryboypage");
+		String email=ExcelUtility.getStringData(1, 1, "deliveryboypage");
+		double phone=ExcelUtility.getNumericData(1, 2, "deliveryboypage");
+		String address=ExcelUtility.getStringData(1, 3, "deliveryboypage");
+		String dboyusername=ExcelUtility.getStringData(1, 4, "deliveryboypage");
+		String dboypassword=ExcelUtility.getStringData(1, 5, "deliveryboypage");
+		deliveryboypage.createDeliveryBoy(name,email,phone,address,dboyusername,dboypassword);
+		
 		boolean deliveryboy=deliveryboypage.isDeliveryBoyCreated();
 		Assert.assertTrue(deliveryboy);
 	}
