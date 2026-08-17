@@ -1,10 +1,8 @@
 package testscript;
 
-import java.io.IOException;
-import java.time.Duration;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.io.IOException;
 
 import pages.AdminPage;
 import pages.LoginPage;
@@ -12,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class AdminTest extends Base{
 
-	@Test
+	@Test(groups= {"regression"})
 	public void verifyNewAdminIsCreated() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
@@ -24,6 +22,6 @@ public class AdminTest extends Base{
 		AdminPage adminpage=new AdminPage(driver);
 		adminpage.createAdmin(adminusername, adminpassword);
 		boolean newadmin=adminpage.isNewAdminDisplayed();
-		Assert.assertTrue(newadmin);
+		AssertJUnit.assertTrue(newadmin);
 	}
 }

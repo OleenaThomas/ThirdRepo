@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Multibrowser Testing" parallel="tests">
+  <test name="Chrome Test">
+  	<parameter name="browser" value="chrome"></parameter>
+    <classes>
+      <class name="testscript.DeliveryBoyTest"/>
+      <class name="testscript.LocationTest"/>
+      <class name="testscript.AdminTest"/>
+      <class name="testscript.NewsTest"/>
+      <class name="testscript.CategoryTest"/>
+      <class name="testscript.LogoutTest"/>
+      <class name="testscript.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test name="Edge Test">
+  	<parameter name="browser" value="edge"></parameter>
+    <classes>
+      <class name="testscript.DeliveryBoyTest"/>
+      <class name="testscript.LocationTest"/>
+      <class name="testscript.AdminTest"/>
+      <class name="testscript.NewsTest"/>
+      <class name="testscript.CategoryTest"/>
+      <class name="testscript.LogoutTest"/>
+      <class name="testscript.LoginTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->

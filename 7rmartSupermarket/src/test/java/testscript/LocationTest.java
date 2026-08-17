@@ -1,9 +1,8 @@
 package testscript;
 
-import java.io.IOException;
-
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.AssertJUnit;
+import java.io.IOException;
 
 import pages.LocationPage;
 import pages.LoginPage;
@@ -11,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LocationTest extends Base {
 
-	@Test
+	@Test(groups= {"regression"})
 	public void verifyUserCanCreateLocation() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
@@ -23,6 +22,6 @@ public class LocationTest extends Base {
 		LocationPage locationpage=new LocationPage(driver);
 		locationpage.createLocation(location,deliverycharge);
 		boolean newlocation=locationpage.isLocationCreated();
-		Assert.assertTrue(newlocation);
+		AssertJUnit.assertTrue(newlocation);
 	}
 }

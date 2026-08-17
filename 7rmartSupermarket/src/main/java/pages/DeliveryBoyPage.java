@@ -27,7 +27,7 @@ public class DeliveryBoyPage {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void createDeliveryBoy(String name, String email, double phone,String address, String dboyusername, String dboypassword) {
+	public void createDeliveryBoy(String name, String email, int phone,String address, String dboyusername, String dboypassword) {
 		deliveryboytile.click();
 		newbutton.click();
 		namefield.sendKeys(name);
