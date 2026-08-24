@@ -1,6 +1,8 @@
 package testscript;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,14 +12,24 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
+import constant.Constant;
 import utilities.ScreenshotUtility;
 
 public class Base {
 
 	public WebDriver driver;
+	public Properties ps;
+	public FileInputStream f;
 	@BeforeMethod(alwaysRun=true)
 	@Parameters("browser")
 	public void browserInitialization(String browser) throws Exception {
+		try {
+			ps=new Properties();
+			f=new FileInputStream(Constant.CONFIGFILE);
+			ps.load(f);
+		}catch (Exception e) {
+			System.out.println(e);
+		}
 		if(browser.equalsIgnoreCase("chrome")) {
 			driver=new ChromeDriver();
 		}
@@ -28,7 +40,8 @@ public class Base {
 			throw new Exception ("invalid");
 		}
 		
-		driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/");
+		//driver.navigate().to("https://groceryapp.uniqassosiates.com/admin/");
+		driver.get(ps.getProperty("url"));
 		driver.manage().window().maximize();
 	}
 	

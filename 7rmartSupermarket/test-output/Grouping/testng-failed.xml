@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Grouping]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
+    <parameter name="browser" value="chrome"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testscript.NewsTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyUserCanCreateNews"/>
+          <include name="browserInitialization"/>
+        </methods>
+      </class> <!-- testscript.NewsTest -->
+    </classes>
+  </test> <!-- Chrome Test(failed) -->
+  <test thread-count="5" parallel="tests" name="Edge Test(failed)">
+    <parameter name="browser" value="edge"/>
+    <groups>
+      <run>
+        <include name="regression"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="testscript.AdminTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyNewAdminIsCreated"/>
+          <include name="browserInitialization"/>
+        </methods>
+      </class> <!-- testscript.AdminTest -->
+      <class name="testscript.CategoryTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyUserCanCreateCategory"/>
+          <include name="browserInitialization"/>
+        </methods>
+      </class> <!-- testscript.CategoryTest -->
+      <class name="testscript.DeliveryBoyTest">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="browserInitialization"/>
+          <include name="verifyUserCanCreateDeliveryBoy"/>
+        </methods>
+      </class> <!-- testscript.DeliveryBoyTest -->
+    </classes>
+  </test> <!-- Edge Test(failed) -->
+</suite> <!-- Failed suite [Grouping] -->
