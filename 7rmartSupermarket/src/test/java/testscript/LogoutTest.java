@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LogoutTest extends Base{
 	
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression"},description="user can successfully logout")
 	public void verifyUserCanLogout() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");

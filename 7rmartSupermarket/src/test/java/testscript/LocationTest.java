@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class LocationTest extends Base {
 
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression"},description="creates new location")
 	public void verifyUserCanCreateLocation() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");

@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class CategoryTest extends Base{
 
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression"},description="creates new category")
 	public void verifyUserCanCreateCategory() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");

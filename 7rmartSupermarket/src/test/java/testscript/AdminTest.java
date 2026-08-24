@@ -11,7 +11,7 @@ import utilities.FakerUtility;
 
 public class AdminTest extends Base{
 
-	@Test(retryAnalyzer=retry.RetryClass.class, groups= {"regression"}, description="")
+	@Test(retryAnalyzer=retry.RetryClass.class, groups= {"regression"}, description="creates new admin")
 	public void verifyNewAdminIsCreated() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");

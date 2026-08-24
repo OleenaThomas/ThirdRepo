@@ -11,7 +11,7 @@ import utilities.ExcelUtility;
 
 public class DeliveryBoyTest extends Base{
 
-	@Test(groups= {"regression"}, retryAnalyzer=retry.RetryClass.class)
+	@Test(groups= {"regression"}, retryAnalyzer=retry.RetryClass.class, description="creates new delivery boy profile")
 	public void verifyUserCanCreateDeliveryBoy() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");

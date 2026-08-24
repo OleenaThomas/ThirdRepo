@@ -10,7 +10,7 @@ import utilities.ExcelUtility;
 
 public class NewsTest extends Base{
 
-	@Test(groups= {"regression"})
+	@Test(groups= {"regression"}, description="adds new news")
 	public void verifyUserCanCreateNews() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
