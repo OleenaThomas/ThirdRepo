@@ -1,22 +1,25 @@
 package testscript;
 
 import org.testng.annotations.Test;
-import org.testng.AssertJUnit;
+import org.testng.Assert;
 import java.io.IOException;
 
 
 import pages.DeliveryBoyPage;
+import pages.HomePage;
 import pages.LoginPage;
 import utilities.ExcelUtility;
 
 public class DeliveryBoyTest extends Base{
-
+	HomePage homepage;
 	@Test(groups= {"regression"}, retryAnalyzer=retry.RetryClass.class, description="creates new delivery boy profile")
 	public void verifyUserCanCreateDeliveryBoy() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.login(username, password);
+		loginpage.enterUsername(username)
+		.enterPassword(password);
+		homepage=loginpage.clickLoginButton();
 		
 		DeliveryBoyPage deliveryboypage=new DeliveryBoyPage(driver);
 		String name=ExcelUtility.getStringData(1, 0, "deliveryboypage");
@@ -28,6 +31,6 @@ public class DeliveryBoyTest extends Base{
 		deliveryboypage.createDeliveryBoy(name,email,phone,address,dboyusername,dboypassword);
 		
 		boolean deliveryboy=deliveryboypage.isDeliveryBoyCreated();
-		AssertJUnit.assertTrue(deliveryboy);
+		Assert.assertTrue(deliveryboy);
 	}
 }

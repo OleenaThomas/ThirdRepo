@@ -21,11 +21,28 @@ public class LoginPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
+	
 	public void login(String username, String password) {
 		usernamefield.sendKeys(username);
 		passwordfield.sendKeys(password);
 		loginbutton.click();
 	}
+	
+	public LoginPage enterUsername(String username) {
+		usernamefield.sendKeys(username);
+		return this;
+	}
+	
+	public LoginPage enterPassword(String password) {
+		passwordfield.sendKeys(password);
+		return this;
+	}
+	
+	public HomePage clickLoginButton() {
+		loginbutton.click();
+		return new HomePage(driver);
+	}
+	
 	
 	public boolean isDashboardDisplayed() {
 		WaitUtility waitutility=new WaitUtility();

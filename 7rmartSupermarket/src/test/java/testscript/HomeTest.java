@@ -1,24 +1,23 @@
 package testscript;
 
-import org.testng.annotations.Test;
-import org.testng.Assert;
 import java.io.IOException;
 
-import pages.HomePage;
+import org.testng.Assert;
+import org.testng.annotations.Test;
+
 import pages.LoginPage;
 import pages.LogoutPage;
 import utilities.ExcelUtility;
 
-public class LogoutTest extends Base{
-	HomePage homepage;
+//this is a class copied from LogoutTest to demonstrate chaining
+
+public class HomeTest extends Base{
 	@Test(groups= {"regression"},description="user can successfully logout")
 	public void verifyUserCanLogout() throws IOException {
 		String username=ExcelUtility.getStringData(1, 0, "loginpage");
 		String password=ExcelUtility.getStringData(1, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.enterUsername(username)
-		.enterPassword(password);
-		homepage=loginpage.clickLoginButton();
+		loginpage.login(username, password);
 		
 		LogoutPage logoutpage=new LogoutPage(driver);
 		logoutpage.logout();
