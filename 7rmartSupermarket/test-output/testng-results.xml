@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="8" failed="2" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-08-27T17:01:01 IST" name="Suite" finished-at="2026-08-27T17:01:28 IST" duration-ms="26316">
+  <suite started-at="2026-08-27T17:11:41 IST" name="Suite" finished-at="2026-08-27T17:12:10 IST" duration-ms="28963">
     <groups>
       <group name="regression">
-        <method signature="AdminTest.verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@7d322cad]" name="verifyNewAdminIsCreated" class="testscript.AdminTest"/>
+        <method signature="AdminTest.verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@21be3395]" name="verifyNewAdminIsCreated" class="testscript.AdminTest"/>
         <method signature="CategoryTest.verifyUserCanCreateCategory()[pri:0, instance:testscript.CategoryTest@4f49f6af]" name="verifyUserCanCreateCategory" class="testscript.CategoryTest"/>
         <method signature="DeliveryBoyTest.verifyUserCanCreateDeliveryBoy()[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" name="verifyUserCanCreateDeliveryBoy" class="testscript.DeliveryBoyTest"/>
-        <method signature="LocationTest.verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@642a7222]" name="verifyUserCanCreateLocation" class="testscript.LocationTest"/>
+        <method signature="LocationTest.verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@7d322cad]" name="verifyUserCanCreateLocation" class="testscript.LocationTest"/>
         <method signature="LogoutTest.verifyUserCanLogout()[pri:0, instance:testscript.LogoutTest@78452606]" name="verifyUserCanLogout" class="testscript.LogoutTest"/>
-        <method signature="NewsTest.verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@21be3395]" name="verifyUserCanCreateNews" class="testscript.NewsTest"/>
+        <method signature="NewsTest.verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@642a7222]" name="verifyUserCanCreateNews" class="testscript.NewsTest"/>
         <method signature="LoginTest.verifyUserCanLogin()[pri:1, instance:testscript.LoginTest@147e2ae7]" name="verifyUserCanLogin" class="testscript.LoginTest"/>
       </group> <!-- regression -->
     </groups>
-    <test started-at="2026-08-27T17:01:01 IST" name="Test" finished-at="2026-08-27T17:01:28 IST" duration-ms="26316">
+    <test started-at="2026-08-27T17:11:41 IST" name="Test" finished-at="2026-08-27T17:12:10 IST" duration-ms="28963">
       <class name="testscript.CategoryTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:01:14 IST" name="browserInitialization" finished-at="2026-08-27T17:01:16 IST" duration-ms="1739" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:11:54 IST" name="browserInitialization" finished-at="2026-08-27T17:11:56 IST" duration-ms="1708" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -27,138 +27,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanCreateCategory()[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:01:16 IST" name="verifyUserCanCreateCategory" description="creates new category" finished-at="2026-08-27T17:01:16 IST" duration-ms="98" status="FAIL">
-          <exception class="org.openqa.selenium.json.JsonException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9cfeac8f6ab54a694ad0e6a55e295a98, actions {actions=[org.openqa.selenium.interactions.Sequence@7cad6289]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64540}, goog:processID: 5044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64540/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9cfeac8f6ab54a694ad0e6a55e295a98]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9cfeac8f6ab54a694ad0e6a55e295a98, actions {actions=[org.openqa.selenium.interactions.Sequence@7cad6289]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64540}, goog:processID: 5044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64540/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9cfeac8f6ab54a694ad0e6a55e295a98
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:521)
-at org.openqa.selenium.json.JsonOutput.lambda$new$14(JsonOutput.java:179)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.lambda$new$21(JsonOutput.java:201)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-at org.openqa.selenium.json.JsonOutput.lambda$new$19(JsonOutput.java:201)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:219)
-at java.base/java.util.Map.forEach(Map.java:733)
-at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:214)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:397)
-at org.openqa.selenium.json.Json.toJson(Json.java:134)
-at org.openqa.selenium.json.Json.toJson(Json.java:120)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:244)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:113)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:211)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:702)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:612)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:577)
-at utilities.PageUtility.clickElement(PageUtility.java:23)
-at pages.CategoryPage.createCategory(CategoryPage.java:34)
-at testscript.CategoryTest.verifyUserCanCreateCategory(CategoryTest.java:26)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:432)
-at org.openqa.selenium.json.Json.toJson(Json.java:132)
-... 39 more
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:517)
-... 60 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']"}
-  (Session info: chrome=151.0.7922.174)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [9cfeac8f6ab54a694ad0e6a55e295a98, findElement {using=xpath, value=//a[@href='https://groceryapp.uniqassosiates.com/admin/list-category' and @class='small-box-footer']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64540}, goog:processID: 5044, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64540/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 9cfeac8f6ab54a694ad0e6a55e295a98
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getWrappedElement(Unknown Source)
-at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-... 62 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.json.JsonException -->
+        <test-method signature="verifyUserCanCreateCategory()[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:11:56 IST" name="verifyUserCanCreateCategory" description="creates new category" finished-at="2026-08-27T17:11:58 IST" duration-ms="2026" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateCategory -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:01:16 IST" name="browserQuit" finished-at="2026-08-27T17:01:17 IST" duration-ms="569" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.CategoryTest@4f49f6af]" started-at="2026-08-27T17:11:58 IST" name="browserQuit" finished-at="2026-08-27T17:11:58 IST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanCreateCategory status=FAILURE method=CategoryTest.verifyUserCanCreateCategory()[pri:0, instance:testscript.CategoryTest@4f49f6af] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanCreateCategory status=SUCCESS method=CategoryTest.verifyUserCanCreateCategory()[pri:0, instance:testscript.CategoryTest@4f49f6af] output={null}]]]>
               </value>
             </param>
           </params>
@@ -167,7 +44,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.CategoryTest -->
       <class name="testscript.NewsTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@21be3395]" started-at="2026-08-27T17:01:12 IST" name="browserInitialization" finished-at="2026-08-27T17:01:14 IST" duration-ms="1978" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.NewsTest@642a7222]" started-at="2026-08-27T17:11:45 IST" name="browserInitialization" finished-at="2026-08-27T17:11:47 IST" duration-ms="1691" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -178,138 +55,15 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@21be3395]" started-at="2026-08-27T17:01:14 IST" name="verifyUserCanCreateNews" description="adds new news" finished-at="2026-08-27T17:01:14 IST" duration-ms="91" status="FAIL">
-          <exception class="org.openqa.selenium.json.JsonException">
-            <message>
-              <![CDATA[java.lang.reflect.InvocationTargetException
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf875b375453e0aa358899d59517c88a, actions {actions=[org.openqa.selenium.interactions.Sequence@6dbfd081]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64519}, goog:processID: 5022, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64519/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf875b375453e0aa358899d59517c88a]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf875b375453e0aa358899d59517c88a, actions {actions=[org.openqa.selenium.interactions.Sequence@6dbfd081]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64519}, goog:processID: 5022, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64519/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf875b375453e0aa358899d59517c88a
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:521)
-at org.openqa.selenium.json.JsonOutput.lambda$new$14(JsonOutput.java:179)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.lambda$new$21(JsonOutput.java:201)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)
-at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
-at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
-at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
-at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
-at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
-at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)
-at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)
-at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
-at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
-at org.openqa.selenium.json.JsonOutput.lambda$new$19(JsonOutput.java:201)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:219)
-at java.base/java.util.Map.forEach(Map.java:733)
-at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:214)
-at org.openqa.selenium.json.JsonOutput.write0(JsonOutput.java:410)
-at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:397)
-at org.openqa.selenium.json.Json.toJson(Json.java:134)
-at org.openqa.selenium.json.Json.toJson(Json.java:120)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:244)
-at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:113)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:211)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:702)
-at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:612)
-at org.openqa.selenium.interactions.Actions.perform(Actions.java:577)
-at utilities.PageUtility.clickElement(PageUtility.java:23)
-at pages.NewsPage.createNews(NewsPage.java:28)
-at testscript.NewsTest.verifyUserCanCreateNews(NewsTest.java:25)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: driver.version: RemoteWebDriver
-at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:432)
-at org.openqa.selenium.json.Json.toJson(Json.java:132)
-... 39 more
-Caused by: java.lang.reflect.InvocationTargetException
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:517)
-... 60 more
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']"}
-  (Session info: chrome=151.0.7922.174)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#nosuchelementexception
-Build info: version: '4.43.0', revision: 'dd0f534'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.5.2', java.version: '21.0.11'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [bf875b375453e0aa358899d59517c88a, findElement {using=xpath, value=//a[@href='https://groceryapp.uniqassosiates.com/admin/list-news' and @class='small-box-footer']}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 151.0.7922.174, chrome: {chromedriverVersion: 151.0.7922.138 (41fa8244239..., userDataDir: /var/folders/sd/cxcn49cj1pv...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64519}, goog:processID: 5022, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64519/devtoo..., se:cdpVersion: 151.0.7922.174, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: bf875b375453e0aa358899d59517c88a
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:606)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:429)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:423)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy15.getWrappedElement(Unknown Source)
-at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:260)
-at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:209)
-at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
-at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-... 62 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.json.JsonException -->
+        <test-method signature="verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@642a7222]" started-at="2026-08-27T17:11:47 IST" name="verifyUserCanCreateNews" description="adds new news" finished-at="2026-08-27T17:11:48 IST" duration-ms="1314" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateNews -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@21be3395]" started-at="2026-08-27T17:01:14 IST" name="browserQuit" finished-at="2026-08-27T17:01:14 IST" duration-ms="513" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.NewsTest@642a7222]" started-at="2026-08-27T17:11:48 IST" name="browserQuit" finished-at="2026-08-27T17:11:48 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanCreateNews status=FAILURE method=NewsTest.verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@21be3395] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanCreateNews status=SUCCESS method=NewsTest.verifyUserCanCreateNews()[pri:0, instance:testscript.NewsTest@642a7222] output={null}]]]>
               </value>
             </param>
           </params>
@@ -318,7 +72,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.NewsTest -->
       <class name="testscript.LocationTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LocationTest@642a7222]" started-at="2026-08-27T17:01:06 IST" name="browserInitialization" finished-at="2026-08-27T17:01:07 IST" duration-ms="1722" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LocationTest@7d322cad]" started-at="2026-08-27T17:11:48 IST" name="browserInitialization" finished-at="2026-08-27T17:11:50 IST" duration-ms="1663" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -329,15 +83,15 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@642a7222]" started-at="2026-08-27T17:01:07 IST" name="verifyUserCanCreateLocation" description="creates new location" finished-at="2026-08-27T17:01:08 IST" duration-ms="995" status="PASS">
+        <test-method signature="verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@7d322cad]" started-at="2026-08-27T17:11:50 IST" name="verifyUserCanCreateLocation" description="creates new location" finished-at="2026-08-27T17:11:51 IST" duration-ms="1376" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateLocation -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LocationTest@642a7222]" started-at="2026-08-27T17:01:08 IST" name="browserQuit" finished-at="2026-08-27T17:01:08 IST" duration-ms="81" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LocationTest@7d322cad]" started-at="2026-08-27T17:11:51 IST" name="browserQuit" finished-at="2026-08-27T17:11:51 IST" duration-ms="80" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyUserCanCreateLocation status=SUCCESS method=LocationTest.verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@642a7222] output={null}]]]>
+                <![CDATA[[TestResult name=verifyUserCanCreateLocation status=SUCCESS method=LocationTest.verifyUserCanCreateLocation()[pri:0, instance:testscript.LocationTest@7d322cad] output={null}]]]>
               </value>
             </param>
           </params>
@@ -346,7 +100,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.LocationTest -->
       <class name="testscript.DeliveryBoyTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:01:01 IST" name="browserInitialization" finished-at="2026-08-27T17:01:04 IST" duration-ms="2933" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:11:41 IST" name="browserInitialization" finished-at="2026-08-27T17:11:44 IST" duration-ms="2331" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -357,11 +111,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanCreateDeliveryBoy()[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:01:04 IST" name="verifyUserCanCreateDeliveryBoy" description="creates new delivery boy profile" finished-at="2026-08-27T17:01:06 IST" duration-ms="1273" status="PASS">
+        <test-method signature="verifyUserCanCreateDeliveryBoy()[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:11:44 IST" name="verifyUserCanCreateDeliveryBoy" description="creates new delivery boy profile" finished-at="2026-08-27T17:11:45 IST" duration-ms="1244" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanCreateDeliveryBoy -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:01:06 IST" name="browserQuit" finished-at="2026-08-27T17:01:06 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.DeliveryBoyTest@66ea810]" started-at="2026-08-27T17:11:45 IST" name="browserQuit" finished-at="2026-08-27T17:11:45 IST" duration-ms="85" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -374,7 +128,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.DeliveryBoyTest -->
       <class name="testscript.AdminTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@7d322cad]" started-at="2026-08-27T17:01:08 IST" name="browserInitialization" finished-at="2026-08-27T17:01:10 IST" duration-ms="1841" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.AdminTest@21be3395]" started-at="2026-08-27T17:11:51 IST" name="browserInitialization" finished-at="2026-08-27T17:11:53 IST" duration-ms="1740" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -385,15 +139,15 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@7d322cad]" started-at="2026-08-27T17:01:10 IST" name="verifyNewAdminIsCreated" description="creates new admin" finished-at="2026-08-27T17:01:11 IST" duration-ms="1223" status="PASS">
+        <test-method signature="verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@21be3395]" started-at="2026-08-27T17:11:53 IST" name="verifyNewAdminIsCreated" description="creates new admin" finished-at="2026-08-27T17:11:54 IST" duration-ms="1178" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyNewAdminIsCreated -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@7d322cad]" started-at="2026-08-27T17:01:11 IST" name="browserQuit" finished-at="2026-08-27T17:01:12 IST" duration-ms="84" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.AdminTest@21be3395]" started-at="2026-08-27T17:11:54 IST" name="browserQuit" finished-at="2026-08-27T17:11:54 IST" duration-ms="84" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyNewAdminIsCreated status=SUCCESS method=AdminTest.verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@7d322cad] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewAdminIsCreated status=SUCCESS method=AdminTest.verifyNewAdminIsCreated()[pri:0, instance:testscript.AdminTest@21be3395] output={null}]]]>
               </value>
             </param>
           </params>
@@ -402,7 +156,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.AdminTest -->
       <class name="testscript.LoginTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:19 IST" name="browserInitialization" finished-at="2026-08-27T17:01:21 IST" duration-ms="1622" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:00 IST" name="browserInitialization" finished-at="2026-08-27T17:12:02 IST" duration-ms="1724" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -413,11 +167,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanLogin()[pri:1, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:21 IST" name="verifyUserCanLogin" description="user can login successfully with valid credentials" finished-at="2026-08-27T17:01:21 IST" duration-ms="601" status="PASS">
+        <test-method signature="verifyUserCanLogin()[pri:1, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:02 IST" name="verifyUserCanLogin" description="user can login successfully with valid credentials" finished-at="2026-08-27T17:12:02 IST" duration-ms="603" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLogin -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:21 IST" name="browserQuit" finished-at="2026-08-27T17:01:21 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:02 IST" name="browserQuit" finished-at="2026-08-27T17:12:02 IST" duration-ms="80" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -428,7 +182,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:21 IST" name="browserInitialization" finished-at="2026-08-27T17:01:23 IST" duration-ms="1701" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:02 IST" name="browserInitialization" finished-at="2026-08-27T17:12:04 IST" duration-ms="1640" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -439,11 +193,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserDoesnotLoginWithIncorrectPassword()[pri:2, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:23 IST" name="verifyUserDoesnotLoginWithIncorrectPassword" description="user cannot login with incorrect password" finished-at="2026-08-27T17:01:23 IST" duration-ms="181" status="PASS">
+        <test-method signature="verifyUserDoesnotLoginWithIncorrectPassword()[pri:2, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:04 IST" name="verifyUserDoesnotLoginWithIncorrectPassword" description="user cannot login with incorrect password" finished-at="2026-08-27T17:12:05 IST" duration-ms="697" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserDoesnotLoginWithIncorrectPassword -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:23 IST" name="browserQuit" finished-at="2026-08-27T17:01:23 IST" duration-ms="77" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:05 IST" name="browserQuit" finished-at="2026-08-27T17:12:05 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -454,7 +208,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:23 IST" name="browserInitialization" finished-at="2026-08-27T17:01:25 IST" duration-ms="1576" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:05 IST" name="browserInitialization" finished-at="2026-08-27T17:12:07 IST" duration-ms="2132" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -465,11 +219,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserDoesnotLoginWithIncorrectUsername()[pri:3, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:25 IST" name="verifyUserDoesnotLoginWithIncorrectUsername" description="user cannot login with incorrect username" finished-at="2026-08-27T17:01:25 IST" duration-ms="161" status="PASS">
+        <test-method signature="verifyUserDoesnotLoginWithIncorrectUsername()[pri:3, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:07 IST" name="verifyUserDoesnotLoginWithIncorrectUsername" description="user cannot login with incorrect username" finished-at="2026-08-27T17:12:08 IST" duration-ms="690" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserDoesnotLoginWithIncorrectUsername -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:25 IST" name="browserQuit" finished-at="2026-08-27T17:01:25 IST" duration-ms="79" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:08 IST" name="browserQuit" finished-at="2026-08-27T17:12:08 IST" duration-ms="80" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -480,7 +234,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserQuit -->
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:25 IST" name="browserInitialization" finished-at="2026-08-27T17:01:27 IST" duration-ms="1723" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:08 IST" name="browserInitialization" finished-at="2026-08-27T17:12:09 IST" duration-ms="1643" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -491,11 +245,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserDoesnotLoginWithInvalidCredentials()[pri:4, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:27 IST" name="verifyUserDoesnotLoginWithInvalidCredentials" description="user cannot login with invalid credentials" finished-at="2026-08-27T17:01:28 IST" duration-ms="623" status="PASS">
+        <test-method signature="verifyUserDoesnotLoginWithInvalidCredentials()[pri:4, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:09 IST" name="verifyUserDoesnotLoginWithInvalidCredentials" description="user cannot login with invalid credentials" finished-at="2026-08-27T17:12:10 IST" duration-ms="605" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserDoesnotLoginWithInvalidCredentials -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:01:28 IST" name="browserQuit" finished-at="2026-08-27T17:01:28 IST" duration-ms="82" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LoginTest@147e2ae7]" started-at="2026-08-27T17:12:10 IST" name="browserQuit" finished-at="2026-08-27T17:12:10 IST" duration-ms="83" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -508,7 +262,7 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
         </test-method> <!-- browserQuit -->
       </class> <!-- testscript.LoginTest -->
       <class name="testscript.LogoutTest">
-        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:01:17 IST" name="browserInitialization" finished-at="2026-08-27T17:01:18 IST" duration-ms="1713" status="PASS">
+        <test-method is-config="true" signature="browserInitialization(java.lang.String)[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:11:58 IST" name="browserInitialization" finished-at="2026-08-27T17:12:00 IST" duration-ms="1622" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -519,11 +273,11 @@ at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethod
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserInitialization -->
-        <test-method signature="verifyUserCanLogout()[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:01:18 IST" name="verifyUserCanLogout" description="user can successfully logout" finished-at="2026-08-27T17:01:19 IST" duration-ms="766" status="PASS">
+        <test-method signature="verifyUserCanLogout()[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:12:00 IST" name="verifyUserCanLogout" description="user can successfully logout" finished-at="2026-08-27T17:12:00 IST" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyUserCanLogout -->
-        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:01:19 IST" name="browserQuit" finished-at="2026-08-27T17:01:19 IST" duration-ms="78" status="PASS">
+        <test-method is-config="true" signature="browserQuit(org.testng.ITestResult)[pri:0, instance:testscript.LogoutTest@78452606]" started-at="2026-08-27T17:12:00 IST" name="browserQuit" finished-at="2026-08-27T17:12:00 IST" duration-ms="81" status="PASS">
           <params>
             <param index="0">
               <value>
