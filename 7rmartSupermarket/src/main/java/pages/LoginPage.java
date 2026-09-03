@@ -21,12 +21,13 @@ public class LoginPage {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
 	}
-	
+	 /*
 	public void login(String username, String password) {
 		usernamefield.sendKeys(username);
 		passwordfield.sendKeys(password);
 		loginbutton.click();
 	}
+	*/
 	
 	public LoginPage enterUsername(String username) {
 		usernamefield.sendKeys(username);

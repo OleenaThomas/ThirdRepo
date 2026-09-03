@@ -13,9 +13,24 @@ public class PageUtility {
 		select.selectByVisibleText(text);
 	}
 	
+	public void dropdownElementByValue(WebElement element, String value) {
+		Select select=new Select(element);
+		select.selectByValue(value);
+	}
+	
+	public void dropdownElementByIndex(WebElement element) {
+		Select select=new Select(element);
+		select.selectByIndex(1);
+	}
+	
 	public void scrollPageToBottom(WebDriver driver) {
 		JavascriptExecutor js= (JavascriptExecutor)driver;
 		js.executeScript("window.scrollBy(document.body.scrollHeight)", "");
+	}
+	
+	public void scrollPageToMid(WebDriver driver) {
+		JavascriptExecutor js= (JavascriptExecutor)driver;
+		js.executeScript("window.scrollBy(0,250)", "");
 	}
 	
 	public void clickElement(WebDriver driver, WebElement element) {

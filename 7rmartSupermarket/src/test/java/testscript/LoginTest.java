@@ -34,7 +34,9 @@ public class LoginTest extends Base{
 		String username=ExcelUtility.getStringData(2, 0, "loginpage");
 		String password=ExcelUtility.getStringData(2, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.login(username, password);
+		loginpage.enterUsername(username)
+		.enterPassword(password);
+		homepage=loginpage.clickLoginButton();
 		boolean alert=loginpage.isAlertMessageDisplayed();
 		Assert.assertTrue(alert,Constant.LOGININVALIDPASSWORD);
 	}
@@ -44,7 +46,9 @@ public class LoginTest extends Base{
 		String username=ExcelUtility.getStringData(3, 0, "loginpage");
 		String password=ExcelUtility.getStringData(3, 1, "loginpage");
 		LoginPage loginpage=new LoginPage(driver);
-		loginpage.login(username, password);
+		loginpage.enterUsername(username)
+		.enterPassword(password);
+		homepage=loginpage.clickLoginButton();
 		boolean alert=loginpage.isAlertMessageDisplayed();
 		Assert.assertTrue(alert, Constant.LOGININVALIDUSERNAME);
 	}
